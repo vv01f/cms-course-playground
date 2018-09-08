@@ -4,6 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
 \usepackage{tikz}
+\usepackage{multimedia}
 
 \usetheme{Dresden}
 
@@ -109,12 +110,21 @@
 \begin{frame}
   \frametitle{Don'ts}
 
+  \begin{columns}
+    \begin{column}{0.45\linewidth}
+
   \begin{itemize}
   \item<+-> Videos einbetten
   \item<+-> \enquote{lustige} Einblendungen (das geht zwar, wird aber nicht von
     allen PDF-Viewern unterstützt)
   \item<+-> alles, was man sowieso nicht in Präsentationen machen sollte \ldots
   \end{itemize}
+
+    \end{column}
+    \begin{column}{0.45\linewidth}
+\movie[width=50mm,height=28mm,poster,externalviewer]{This land is mine. by Nina Paley}{ThisLandIsMine-byNinaPaley.mkv} % https://www.youtube.com/watch?v=4pKMV6e5kEo
+    \end{column}
+  \end{columns}
 
 \end{frame}
 
