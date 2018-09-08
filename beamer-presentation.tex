@@ -17,6 +17,9 @@
 
 \usepackage{graphicx}
 
+\usepackage{tikz}
+\usepackage{tikzducks}
+
 \begin{document}
 
 \title{Eine kleine Präsentation}
@@ -107,7 +110,17 @@
   \item \verb!texdoc beameruserguide!
   \item \url{https://tex.stackexchange.com/}
   \item \url{https://www.dante.de/tex/TeXAnfaenger.html}
+  \item ganz allgemein DAS INTERNET!
   \end{itemize}
+
+  \onslide<+->
+
+  \begin{block}{oder einfach}
+    \begin{center}
+      Leute fragen \\\tikz{\duck}
+    \end{center}
+
+  \end{block}
 
 \end{frame}
 
@@ -139,7 +152,7 @@
 
 \end{frame}
 
-\begin{frame}
+\begin{frame}[fragile]
   \frametitle{WTF?}
 
   \onslide<+->
@@ -157,6 +170,12 @@
 
   {\tiny \url{https://en.wikipedia.org/wiki/Srinivasa_Ramanujan}}
 
+  \onslide<+->
+
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[rotate=40] at (current page.center) {{\Huge\color{red}\bfseries ALLES MIST!}};
+  \end{tikzpicture}
+
 \end{frame}
 
 \section{Fazit}
@@ -169,8 +188,12 @@
 \begin{frame}
   \frametitle{Und was soll das alles?}
 
+  \onslide<+->
+
   \begin{center}
-    \LaTeX{}-\texttt{beamer} fetzt!
+    \LaTeX{}-\texttt{beamer} fetzt! \\
+    \onslide<+->
+    \dots und Powerpoint ist doof \dots
   \end{center}
 
 \end{frame}

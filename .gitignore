@@ -6,6 +6,8 @@
 *.snm
 *.toc
 *.vrb
-auto/*
-*.mkv
-*.mp4
+/auto/*
+/*.mkv
+/*.mp4
+/beamer-presentation.synctex.gz
+*.el
